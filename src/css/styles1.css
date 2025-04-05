@@ -1,0 +1,218 @@
+:root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo img {
+            height: 50px;
+        }
+        
+        .logo-text h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+        
+        .terms-section {
+            padding: 60px 0;
+        }
+        
+        .terms-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .terms-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--primary);
+        }
+        
+        .terms-title h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .terms-title h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .terms-content h2 {
+            color: var(--primary);
+            margin: 30px 0 15px;
+            font-size: 1.5rem;
+        }
+        
+        .terms-content h3 {
+            color: var(--secondary);
+            margin: 25px 0 10px;
+            font-size: 1.2rem;
+        }
+        
+        .terms-content p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .terms-content ul {
+            margin: 15px 0;
+            padding-right: 20px;
+        }
+        
+        .terms-content li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-right: 15px;
+        }
+        
+        .terms-content li::before {
+            content: '•';
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+        }
+        
+        .highlight {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-right: 4px solid var(--accent);
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 15px;
+            }
+            
+            .terms-container {
+                padding: 20px;
+            }
+            
+            .terms-title h1 {
+                font-size: 2rem;
+            }
+        }
